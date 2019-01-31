@@ -7,9 +7,9 @@ transmission-vskip is based on shell script . Creat a symbolic link at /usr/bin/
 # Installation:
 download transmission-vskip.sh to your current directory and:
 > $ sudo mv ./transmission-vskip.sh /etc/
-$ sudo chmod +x /etc/transmission-vskip.sh
-$ sudo ln -s /etc/transmission-vskip.sh /usr/bin/transmission-vskip
-$ sudo vim /etc/transmission-vskip.sh
+> $ sudo chmod +x /etc/transmission-vskip.sh
+> $ sudo ln -s /etc/transmission-vskip.sh /usr/bin/transmission-vskip
+> $ sudo vim /etc/transmission-vskip.sh
 
 # Configuration:
 Open the file you downloaded , you should see "User Configuration" part between line 3 and 19 .
