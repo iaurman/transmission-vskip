@@ -1,7 +1,7 @@
 ## transmission-vskip
 transmission-vskip is a shell script for skipping hash verification when using transmission-cli . It is very useful for seeding identical big torrents on different trackers .
 
-<img src="https://github.com/1ndeed/transmission-vskip/blob/master/Demontration.png"><br/>
+![Preview]["https://github.com/1ndeed/transmission-vskip/blob/master/Demontration.png]
 
 ## Simple to Use:
 transmission-vskip is based on shell script . Creat a symbolic link at `/usr/bin/` . Then configure at most 3 lines for it . Then it is ready to work .
@@ -9,7 +9,7 @@ transmission-vskip is based on shell script . Creat a symbolic link at `/usr/bin
 ## Installation:
 download transmission-vskip.sh to your current directory and:
 
-    $ sudo mv ./transmission-vskip.sh /etc/  
+    $ sudo mv ./transmission-vskip/transmission-vskip.sh /etc/  
     $ sudo chmod +x /etc/transmission-vskip.sh  
     $ sudo ln -s /etc/transmission-vskip.sh /usr/bin/transmission-vskip  
     $ sudo vim /etc/transmission-vskip.sh  
