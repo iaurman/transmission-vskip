@@ -30,14 +30,14 @@ Lets say you have Completed downloading a 100GB video file from website A . Then
 > $ sudo transmission-vskip 'Transformers.The.Last.Knight.2017.2160p.EUR.UHD.BluRay.HEVC.Atmos.TrueHD.7.1-DiY' --base 'website A'  
 
 ## Tips:
-You can add abbreviation for your trackers between line 79 and 84 .  
-Always use '' to add the task name to avoid special symbol issues .  
-You can write "alias vskip='transmission-vskip'" into ~/.bashrc .  
-The first argument is task name instead of torrent name , transmission-skip only skip verification for the tasks have the same task name .  
+* You can add abbreviation for your trackers between line 79 and 84 .  
+* Always use '' to add the task name to avoid special symbol issues .  
+* You can write "alias vskip='transmission-vskip'" into ~/.bashrc .  
+* The first argument is task name instead of torrent name , transmission-skip only skip verification for the tasks have the same task name .  
 
 ## Issues:
-While skipping verification , transmission-daemon must be stopped . After restart transmission-daemon , It is normal for some torrents to report errors . But don't worry , errors usually would disappear in 10 min .  
-Sometimes "systemctl stop transmission" doesn't work with no respond . Open other terminal , do this:  
-> $ sudo htop
+* While skipping verification , transmission-daemon must be stopped . After restart transmission-daemon , It is normal for some torrents to report errors . But don't worry , errors usually would disappear in 10 min .  
+* Sometimes "systemctl stop transmission" doesn't work with no respond . Open other terminal , do this:  
+> $ sudo htop  
 find transmission-daemon , and kill all of them .
 
