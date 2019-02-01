@@ -39,8 +39,5 @@ Lets say you have Completed downloading a 100GB video file from website A . Then
 
 ## Issues:
 * While skipping verification , transmission-daemon must be stopped . After restart transmission-daemon , It is normal for some torrents to report errors . But don't worry , errors usually would disappear in 10 min .  
-* Sometimes "systemctl stop transmission" doesn't work with no respond . Open other terminal , do this:  
+* Sometimes "systemctl stop transmission" doesn't work with no respond . Open htop on other terminal , find transmission-daemon , and kill all of them :  
 > $ sudo htop  
-
-find transmission-daemon , and kill all of them .
-
