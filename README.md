@@ -14,13 +14,13 @@ $ sudo ln -s /etc/transmission-vskip.sh /usr/bin/transmission-vskip
 $ sudo vim /etc/transmission-vskip.sh  
 
 ## Configuration:
-* Open the file you downloaded , you should see "User Configuration" part between line 3 and 19 .  
+Open the file you downloaded , you should see "User Configuration" part between line 3 and 19 .  
 * "config_dir" is the location of your transmission-daemon configuration directory . Usually in ~/.config/transmission-daemon/ .  
-* It contains "torrents" and "resume" files . Using full path is recommended . End with '/' please .  
+It contains "torrents" and "resume" files . Using full path is recommended . End with '/' please .  
 * "start_cmd" and "shutdown_cmd" are commands for shutting down and start transmission-daemon . Please use Tab as separators .  
-* If your system use systemd and you use systemd to active transmission-daemon , you don't have to modify these two ;  
-* If your system don't use systemd , change it in your way . Just make sure you have the permission ;  
-* If you don't nedd this function , add '#' in the front of these two lines to disable them .  
+If your system use systemd and you use systemd to active transmission-daemon , you don't have to modify these two ;  
+If your system don't use systemd , change it in your way . Just make sure you have the permission ;  
+If you don't nedd this function , add '#' in the front of these two lines to disable them .  
 
 
 ## Ready to Run:
@@ -41,5 +41,6 @@ Lets say you have Completed downloading a 100GB video file from website A . Then
 * While skipping verification , transmission-daemon must be stopped . After restart transmission-daemon , It is normal for some torrents to report errors . But don't worry , errors usually would disappear in 10 min .  
 * Sometimes "systemctl stop transmission" doesn't work with no respond . Open other terminal , do this:  
 > $ sudo htop  
+
 find transmission-daemon , and kill all of them .
 
