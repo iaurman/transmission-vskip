@@ -1,7 +1,7 @@
 ## transmission-vskip
 transmission-vskip is a shell script for skipping hash verification when using transmission-cli . It is very useful for seeding identical big torrents on different trackers .
 
-![Preview]["https://github.com/1ndeed/transmission-vskip/blob/master/Demontration.png]
+![Preview](https://github.com/1ndeed/transmission-vskip/blob/master/Demontration.png)
 
 ## Simple to Use:
 transmission-vskip is based on shell script . Creat a symbolic link at `/usr/bin/` . Then configure at most 3 lines for it . Then it is ready to work .
