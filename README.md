@@ -15,7 +15,7 @@ download transmission-vskip.sh to your current directory and:
     $ sudo vim /etc/transmission-vskip.sh  
 
 ## Configuration:
-Open the file you downloaded , you should see `"User Configuration"` part between `line 3 and 19` .  
+Open the file you downloaded , you should see `User Configuration` part between `line 3 and 19` .  
 * "config_dir" is the location of your `transmission-daemon configuration directory` . Usually in `~/.config/transmission-daemon/` .  
 It contains "torrents" and "resume" files . Using `full path` is recommended . End with `'/'` please .  
 * "start_cmd" and "shutdown_cmd" are commands for shutting down and start transmission-daemon . Please `use Tab as separators` .  
@@ -25,12 +25,12 @@ If you don't nedd this function , add '#' in the front of these two lines to dis
 
 
 ## Ready to Run:
-before you run it , using 'check' to check if there is any obstructs is recommended .  
+before you run it , using `check` to check if there is any obstructs is recommended .  
 
     $ transmission-vskip check  
 
 ## Example:
-Lets say you have Completed downloading a 100GB video file from website A . Then you noticed website B and website C have the same torrent . After you added two new torrents to transmission . You can do this to skip hash verification:  
+Lets say you have Completed downloading a 100GB video file from `website A` . Then you noticed `website B` and `website C` have the `same torrent` . After you `added two new torrents to transmission` . You can do this to skip hash verification:  
 
     $ sudo transmission-vskip 'Transformers.The.Last.Knight.2017.2160p.EUR.UHD.BluRay.HEVC.Atmos.TrueHD.7.1-DiY' --base 'website A'  
 
