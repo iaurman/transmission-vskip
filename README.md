@@ -25,7 +25,7 @@ $ sudo vim /etc/transmission-vskip.sh
 
 ## Ready to Run:
 before you run it , using 'check' to check if there is any obstructs is recommended .  
-$ transmission-vskip check  
+> $ transmission-vskip check  
 
 ## Example:
 Lets say you have Completed downloading a 100GB video file from website A . Then you noticed website B and website C have the same torrent . After you added two new torrents to transmission . You can do this to skip hash verification:  
